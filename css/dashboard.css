@@ -1,0 +1,266 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 120px;
+}
+
+.search-bar {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.icon {
+    width: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #656565;
+    text-align: center;
+}
+
+.menu p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu p:hover {
+    color: #e3e3e3;
+}
+
+.menu img {
+    align-items: flex-end;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #211C24;
+}
+.ip-image {
+    display: flex;
+
+}
+.iphone14 {
+    font-size: 70px;
+
+}
+.intro {
+    color: white;
+    display: flex;
+    text-align: start;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.intro-text{
+    color: #909090;
+}
+
+.buy-button {
+    background-color: #211C24;
+    color: white;
+    border: 1px solid white;
+    width: 187px;
+    height: 56px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.catagory{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 160px;
+    text-align: left;
+    background-color: #FAFAFA;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+}
+.catagory-box{
+    gap: 8px;
+    background-color: #EDEDED;
+    padding: 52px 52px 52px 52px;
+    border-radius: 10px;
+}
+.show-products {
+    padding: 100px;
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.product {
+    display: block;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 268px;
+    height: 432px;
+}
+
+.product button {
+
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favorite-icon{
+    display: flex;
+    justify-self: end;
+    
+}
+.discount-products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-column {
+    flex: 1;
+}
+.footer-column h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+}
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin: 5px 0;
+}
+.social-icons {
+    display: flex;
+    padding: 104px 160px 104px 160px ;
+    gap: 24px;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.discount-banner{
+    position: relative;
+    background-color: #333;
+
+
+
+
+    gap: 8px;
+}
+.discount-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.discount-banner-button{
+    padding: 16px 56px 16px 56px;
+    background-color: #2E2E2E;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.logout-menu {
+    
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logout-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.product-1 {
+    display: block;
+    float: left;
+}
+.product-2 {
+
+}
+.product-3 {
+    display: block;
+}
+
+.product-4 {
+    display: block;
+}
+

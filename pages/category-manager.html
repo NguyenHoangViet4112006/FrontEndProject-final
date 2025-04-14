@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục - Ecommerce</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/category-manager.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="ecommerce">
+            <img src="../assets/icons/Fire.png" alt="Logo">
+            <h2>Ecommerce</h2>
+        </div>
+        <div class="person">
+            <img src="../assets/icons/bell.png" alt="Thông báo">
+            <img src="../assets/images/Ellipse 6.png" alt="Người dùng">
+        </div>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <div class="menu2">
+                <img src="../assets/icons/Home.png" alt="">
+                <h3>Thống kê</h3>
+            </div>
+            <div class="menu2">
+                <img src="../assets/icons/catagory.png" alt="">
+                <h3>Danh mục</h3>
+            </div>
+            <div class="menu2">
+                <img src="../assets/icons/file-inactive.png" alt="">
+                <h3 class="text-menu"><a href="./product-manager.html">Sản phẩm</a></h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header-2">
+                <h3>Danh mục</h3>
+                <button class="header-button" id="openModal">Thêm mới danh mục</button>
+                <div class="overlay" id="overlay"></div>
+                <div class="modal" id="addCategoryModal">
+                    <div class="modal-header">Thêm mới danh mục</div>
+                    <form id="addCategoryform">
+                        <label for="categoryCode">Mã danh mục</label>
+                        <input type="text" id="categoryCode" placeholder="Nhập mã danh mục" required>
+                        
+                            <label for="categoryName">
+                                Tên danh mục
+                            </label>
+                
+                    
+                        <input type="text" id="categoryName" placeholder="Nhập tên danh mục" required>
+                        <label>Trạng thái</label>
+                        <br>
+                        <div class="modal-status-bar">
+                            <input type="radio" name="status" value="active"> Đang hoạt động
+                            <input type="radio" name="status" value="inactive"> Ngừng hoạt động
+                        </div>
+                        <div class="modal-actions">
+                            <button type="button" class="button cancel" id="closeModal">Hủy</button>
+                            <button type="submit" class="button add">Thêm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="top-bar">
+                <div class="search-bar">
+                    <select id="statusFilter">
+                        <option value="">Lọc theo trạng thái</option>
+                        <option value="active">Đang hoạt động</option>
+                        <option value="inactive">Ngừng hoạt động</option>
+                    </select>
+
+
+
+                </div>
+                <div class="search-box">
+                    <input class="search-boder" type="text" placeholder="Tìm kiếm danh mục">
+                    <img src="../assets/icons/Search.png" alt="" class="search-icon">
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th >Mã danh mục
+                                <img src="../assets/icons/arrow-down.png" alt="">
+                            </th>
+                            
+                            <th class="filterByName">Tên danh mục
+                                <img class="sort-icon" src="../assets/icons/arrow-down.png" alt="">
+                            </th>
+                            <th>Trạng thái</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DM001</td>
+                            <td>Quần áo</td>
+                            <td><span class="active">Đang hoạt động</span></td>
+                            <td>
+                                <img src="../assets/icons/trash-icon.png" alt="Xóa">
+                                <img src="../assets/icons/pencil-icon.png" alt="Sửa">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DM002</td>
+                            <td>Kính mắt</td>
+                            <td><span class="inactive">Ngừng hoạt động</span></td>
+                            <td>
+                                <img src="../assets/icons/trash-icon.png" alt="Xóa">
+                                <img src="../assets/icons/pencil-icon.png" alt="Sửa">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DM003</td>
+                            <td>Giày dép</td>
+                            <td><span class="active">Đang hoạt động</span></td>
+                            <td>
+                                <img src="../assets/icons/trash-icon.png" alt="Xóa">
+                                <img src="../assets/icons/pencil-icon.png" alt="Sửa">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DM004</td>
+                            <td>Thời trang nam</td>
+                            <td><span class="inactive">Ngừng hoạt động</span></td>
+                            <td>
+                                <img src="../assets/icons/trash-icon.png" alt="Xóa">
+                                <img src="../assets/icons/pencil-icon.png" alt="Sửa">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DM005</td>
+                            <td>Thời trang nữ</td>
+                            <td><span class="inactive">Ngừng hoạt động</span></td>
+                            <td>
+                                <img src="../assets/icons/trash-icon.png" alt="Xóa">
+                                <img src="../assets/icons/pencil-icon.png" alt="Sửa">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#">&larr;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../js/category-manager.js"></script>
+</body>
+</html>
