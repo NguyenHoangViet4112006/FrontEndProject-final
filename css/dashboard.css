@@ -213,18 +213,17 @@ footer {
 }
 
 .discount-banner{
+    margin-top: 100px;
     position: relative;
     background-color: #333;
-
-
-
+    height:53vh;
 
     gap: 8px;
 }
 .discount-text{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
 }
 .discount-banner-button{
@@ -252,15 +251,29 @@ footer {
 .product-1 {
     display: block;
     float: left;
+    position: absolute;
+    left: 250px;
+    top: 40;
 }
 .product-2 {
-
+    position: absolute;
+    left: 30px;
 }
 .product-3 {
-    display: block;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .product-4 {
-    display: block;
+
+    position: absolute;
+    right: 0;
+    top: 306px;
 }
 
+.product-5{
+    position: absolute;
+    bottom: 130px;
+    right: 0;
+}
